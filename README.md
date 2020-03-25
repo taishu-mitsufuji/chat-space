@@ -18,17 +18,14 @@ application up and running.
 ## groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groupname|strimgs|null: false|
-|user_id|integer|null: false, foreign_key: true|
-|message|text|null: false, foreign_key: true|
+|name|string|null: false|
 ### Association
-- has_many :users
-- has_many :messages
+
 
 ## messageテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|text|text||
 |time|time|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
@@ -42,7 +39,8 @@ application up and running.
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
-- has_many :users
+- belongs_to :user
+- belongs_to :group
 
 Things you may want to cover:
 
