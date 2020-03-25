@@ -42,8 +42,7 @@ application up and running.
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :user
-- belongs_to :group
+- has_many :users
 
 Things you may want to cover:
 
