@@ -3,16 +3,16 @@ class ApplicationRecord < ActiveRecord::Base
 end
 
 class users < ActiveRecord::Base
-  has_many :users, through: :user_group
-  has_many :user_group
+  has_many :users, through: :user_groups
+  has_many :user_groups
 end
 
-class group < ActiveRecord::Base
-  has_many :group, through: :user_group
-  has_many :user_group
+class groups < ActiveRecord::Base
+  has_many :groups, through: :user_groups
+  has_many :user_groups
 end
 
-class user_group < ActiveRecord::Base
+class users_groups < ActiveRecord::Base
   belongs_to :user
   belongs_to :group
 end
