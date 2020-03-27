@@ -38,21 +38,15 @@
         }padding-left: 0;
         &__icon {
           line-height: 20px;
-          // width: 60px;
           padding-right: 5px;
           display: flex;
           align-items: center;
-          // position: relative;
           .far.fa-edit {
             margin-right: 5px;
           }
           &__pen{
-            // position: absolute;
-            // right: 0;
           }
           &__gear{
-            // position: absolute;
-            // right: 0;
             margin-right: 0;
           }
         }
@@ -69,17 +63,11 @@
       &__team {
         color: #ffffff;
         &__name{
-          // color: #ffffff;
           font-size: 15px;
           margin: 0 auto;
-          // width: 260px;
-          // padding: 20px 20px 5px;
         }
         &__first-message {
-          // color: #ffffff;
           font-size: 11px;
-          // width: 260px;
-          // padding: 0 20px 40px;
         }
       }
     }
@@ -198,16 +186,6 @@
           .input-box_image_file {
             display: none;
           }
-        // &__type {
-        //   height: 50px;
-        //   // width: 550px;
-        // }
-        // &__icon {
-        //   height: 50px;
-        //   width: 50px;
-        //   text-align: center;
-        //   line-height: 50px;
-        // }
       }
       .submit-btn {
         height: 50px;
