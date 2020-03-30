@@ -1,0 +1,35 @@
+.main-chat
+  .main-chat__header
+    .main-chat__header__box
+      .main-chat__header__box__team-name
+        ネルネルネール
+      .main-chat__header__box__member
+        鳩ポッポ
+    .main-chat__header__right
+      .main-chat__header__right__edit
+        Edit
+  .main-chat__message-list
+    .main-chat__message-list__box
+      .main-chat__message-list__box__name
+        .main-chat__message-list__box__name__true-name
+          プーさん
+        .main-chat__message-list__box__name__time
+          2020/03/27(Fri)13:12:11
+      .main-chat__message-list__box__content
+        パヤパヤパヤー
+    .main-chat__message-list__box
+      .main-chat__message-list__box__name
+        .main-chat__message-list__box__name__true-name
+          プーさん
+        .main-chat__message-list__box__name__time
+          2020/03/27(Fri)13:12:11
+      .main-chat__message-list__box__content
+        パヤパヤパヤー
+  .main-chat__message-form
+    %form.main-chat__message-form__contents
+      .main-chat__message-form__contents__message
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+          %label{class: "input-box_image"}
+            = icon('fas', "image")
+            %input{type: "file",class: "input-box_image_file"}
+      %input{type: "submit", value: "Send", class: "submit-btn"}
