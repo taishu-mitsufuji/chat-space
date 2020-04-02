@@ -61,5 +61,6 @@ $(function () {
                .fail(function () {
                     alert('メッセージを送信できません');
                })
+          return false;
      });
 });
