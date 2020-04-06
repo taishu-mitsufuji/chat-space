@@ -72,6 +72,9 @@
       padding: 20px;
       &__team {
         color: #ffffff;
+        .side-bar__group__group-content__team__group {
+          padding-bottom: 30px;
+        }
         &__group{
           color: white;
           a {
@@ -133,9 +136,11 @@
       bottom: 0;
       margin: auto;
       border: solid 1px;
+      text-decoration: none;
       &__edit {
         line-height: 40px;
         text-align: center;
+        a{text-decoration: none;}
       }
     }
   }
