@@ -72,6 +72,9 @@
       padding: 20px;
       &__team {
         color: #ffffff;
+        .side-bar__group__group-content__team__group {
+          padding-bottom: 30px;
+        }
         &__group{
           color: white;
           a {
@@ -133,9 +136,11 @@
       bottom: 0;
       margin: auto;
       border: solid 1px;
+      text-decoration: none;
       &__edit {
         line-height: 40px;
         text-align: center;
+        a{text-decoration: none;}
       }
     }
   }
@@ -154,22 +159,25 @@
     &__box {
       padding-top: 35px;
       padding-left: 40px;
-      &__name {
+      .message {
+        padding-bottom: 40px;
+      }
+      .upper-message {
         display: flex;
-        &__true-name {
+        .upper-message__user-name {
           color: #333333;
           font-size: 16px;
           font-weight: bold;
           padding-bottom: 12px;
         }
-        &__time {
+        .upper-message__date {
           color: #999999;
           font-size: 12px;
           text-align: center;
           padding-left: 10px;
         }
       }
-      &__content {
+      .lower-message {
         color: #434A54;
         font-size: 14px;
       }
