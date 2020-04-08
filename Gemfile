@@ -71,6 +71,8 @@ gem 'pry-rails'
 
 gem 'carrierwave'
 
+gem 'fog-aws'
+
 gem 'mini_magick'
 
 group :test, :development do 
